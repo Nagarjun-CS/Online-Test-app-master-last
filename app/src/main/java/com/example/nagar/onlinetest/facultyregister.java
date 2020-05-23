@@ -33,10 +33,12 @@ public class facultyregister extends AppCompatActivity {
         else{
 
             JsonObject jsonObject = new JsonObject();
+            jsonObject.addProperty("name",FacultyName.getText().toString());
             jsonObject.addProperty("usn", FacultyUSN.getText().toString());
             jsonObject.addProperty("email", FacultyEmail.getText().toString());
             jsonObject.addProperty("pass",FacultyPasswrd.getText().toString());
             IRetrofit jsonPostService = ServiceGenerator.createService(IRetrofit.class, "http://ec2-13-233-208-238.ap-south-1.compute.amazonaws.com/");
+            //Call<Objec> call = jsonPostService.postRawJSON(jsonObject);
             Call<Objec> call = jsonPostService.postRawJSON(jsonObject);
             Log.e("call",jsonObject.toString());
             call.enqueue(new Callback<Objec>() {
@@ -93,6 +95,7 @@ public class facultyregister extends AppCompatActivity {
     EditText FacultyUSN;
     EditText FacultyPasswrd;
     EditText FacultyReenterPasswd;
+    EditText FacultyName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,5 +105,6 @@ public class facultyregister extends AppCompatActivity {
         FacultyUSN = (EditText)findViewById(R.id.editText4);
         FacultyPasswrd = (EditText)findViewById(R.id.editText5);
         FacultyReenterPasswd = (EditText)findViewById(R.id.editText6);
+        FacultyName = (EditText)findViewById(R.id.editText7);
     }
 }

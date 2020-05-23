@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Online-Test-app-master.iml" filepath="$PROJECT_DIR$/Online-Test-app-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/Online-Test-app-master-app.iml" filepath="$PROJECT_DIR$/app/Online-Test-app-master-app.iml" />
+      <module fileurl="file://C:\Users\nagar\AndroidStudioProjects\Online-Test-app-master\app\Online-Test-app-master-app.iml" filepath="C:\Users\nagar\AndroidStudioProjects\Online-Test-app-master\app\Online-Test-app-master-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

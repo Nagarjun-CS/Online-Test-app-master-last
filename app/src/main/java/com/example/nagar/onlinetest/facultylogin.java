@@ -18,13 +18,24 @@ import retrofit2.Response;
 public class facultylogin extends AppCompatActivity {
     ProgressDialog progressDialog;
 
+
     public void faculty(View view)
     {
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Uploading...");
         progressDialog.show();
-        Intent intent = new Intent(getApplicationContext(),faculty.class);
-        startActivity(intent);
+
+        if (FacultyUsn.getText().toString().isEmpty()) {
+            progressDialog.dismiss();
+            Toast.makeText(this, " USN is missing ", Toast.LENGTH_SHORT).show();
+            return;
+
+        }
+        if (FacultyPassword.getText().toString().isEmpty()) {
+            progressDialog.dismiss();
+            Toast.makeText(this, " Password is missing ", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
             JsonObject jsonObject = new JsonObject();
             jsonObject.addProperty("usn", FacultyUsn.getText().toString());
@@ -51,12 +62,14 @@ public class facultylogin extends AppCompatActivity {
                         }
                         else if(response.body().getStatus().equals("Not Registered!")){
                             Toast.makeText(facultylogin.this, "USN Not Registered!!", Toast.LENGTH_SHORT).show();
-
-
+                            FacultyPassword.setText("");
+                            FacultyUsn.setText("");
 
                         }
                         else{
                             Toast.makeText(facultylogin.this, "Incorrect passowrd!!", Toast.LENGTH_SHORT).show();
+                            FacultyPassword.setText("");
+
                         }
 
 

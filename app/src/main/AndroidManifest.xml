@@ -33,7 +33,7 @@
         <activity android:name=".student" />
         <activity android:name=".descriptive" />
         <activity android:name=".addrules" />
-        <activity android:name=".studenttest"></activity>
+        <activity android:name=".studenttest" />
     </application>
 
 </manifest>

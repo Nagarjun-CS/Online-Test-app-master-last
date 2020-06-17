@@ -5,9 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back1"
-    tools:context="com.example.nagar.onlinetest.studenttest"
-    tools:layout_editor_absoluteY="25dp">
-
+    tools:context="com.example.nagar.onlinetest.student_descriptive_qns">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -62,7 +60,7 @@
     <ScrollView
         android:id="@+id/scroll"
         android:layout_width="match_parent"
-        android:layout_height="190dp"
+        android:layout_height="203dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -70,7 +68,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.267">
+        app:layout_constraintVertical_bias="0.277">
 
         <TextView
             android:id="@+id/textView7"
@@ -80,13 +78,13 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:ems="10"
             android:background="@drawable/curve1"
+            android:ems="10"
             android:fontFamily="@font/aclonica"
             android:gravity="top"
             android:hint="Question"
             android:inputType="textCapSentences|textMultiLine"
-            android:minHeight="150dp"
+            android:minHeight="170dp"
             android:padding="10dp"
             android:textColor="@android:color/background_dark"
             android:textSize="16sp"
@@ -95,12 +93,36 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.246" />
+            app:layout_constraintVertical_bias="0.451"
+            tools:layout_editor_absoluteX="24dp" />
     </ScrollView>
 
 
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="344dp"
+        android:layout_height="211dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/curve1"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Answer..."
+        android:inputType="textCapSentences|textMultiLine"
+        android:minHeight="150dp"
+        android:padding="10dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.811" />
+
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/button"
         android:layout_width="119dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -109,109 +131,40 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/rounded_button"
         android:fontFamily="@font/aclonica"
-        android:onClick="confirm"
+        android:text="UPLOAD"
+        android:onClick="upload"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.799"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.984" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/aclonica"
+        android:onClick="descriptive"
         android:text="CONFIRM"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.184"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.984" />
 
-
-    <RadioGroup
-        android:id="@+id/radiogrp"
-        android:layout_width="347dp"
-        android:layout_height="185dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/curve1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.836">
-
-        <RadioButton
-            android:id="@+id/option1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="#cc33ff"
-            android:fontFamily="@font/aclonica"
-            android:paddingBottom="11dp"
-            android:paddingTop="11dp"
-            android:text="option1"
-            android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <RadioButton
-            android:id="@+id/option2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="#cc33ff"
-            android:fontFamily="@font/aclonica"
-            android:paddingBottom="11dp"
-            android:paddingTop="11dp"
-            android:text="option2"
-            android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <RadioButton
-            android:id="@+id/option3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="#cc33ff"
-            android:fontFamily="@font/aclonica"
-            android:paddingBottom="11dp"
-            android:paddingTop="11dp"
-            android:text="option3"
-            android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <RadioButton
-            android:id="@+id/option4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="#cc33ff"
-            android:fontFamily="@font/aclonica"
-            android:paddingBottom="11dp"
-            android:paddingTop="11dp"
-            android:text="option4"
-            android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-
-    </RadioGroup>
-
     <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/aclonica"
-        android:text="test_name"
-        android:textColor="@android:color/background_light"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.114" />
-
-    <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/marks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -219,15 +172,15 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/aclonica"
-        android:text="Options - "
+        android:text="Marks - "
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.535" />
-
+        app:layout_constraintVertical_bias="0.058" />
 
 </android.support.constraint.ConstraintLayout>

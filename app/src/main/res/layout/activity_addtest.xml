@@ -11,6 +11,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="637dp"
+        android:layout_margin="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.021"
@@ -20,6 +21,7 @@
             android:id="@+id/listView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/curve1"
 
             android:layout_centerHorizontal="true" >
         </ListView>

@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Online Test</string>
+    <string name="read_file">This app needs access to your file storage so that it can read photos.</string>
+
+    <string-array name="Spinner_Items">
+        <item>Select</item>
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+
+    </string-array>
+
+    <string-array name="Spinner_Items2">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
 </resources>

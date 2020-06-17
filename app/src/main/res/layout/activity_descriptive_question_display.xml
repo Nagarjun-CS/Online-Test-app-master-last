@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.nagar.onlinetest.student">
+    android:background="@drawable/back1"
+    tools:context="com.example.nagar.onlinetest.descriptiveQuestionDisplay">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -15,33 +16,32 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/aclonica"
-        android:text="Enter your test code"
-        android:textColor="@android:color/background_dark"
-        android:textSize="20sp"
+        android:text="Questions and Marks "
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.085" />
+        app:layout_constraintVertical_bias="0.053" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="346dp"
+        android:layout_height="483dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/rounded_button"
-        android:fontFamily="@font/aclonica"
-        android:onClick="enter"
-        android:text="Enter"
-        android:textSize="18sp"
+        android:background="@drawable/curve1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.898" />
+        app:layout_constraintVertical_bias="0.882" />
+
+
 </android.support.constraint.ConstraintLayout>
